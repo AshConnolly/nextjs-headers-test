@@ -9,6 +9,6 @@ export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>,
 ) {
-  // res.status(200).setHeader('Content-Type', 'application/pdf').json({ name: "John Doe" });
+  res.setHeader('Content-Type', 'application/pdf')
   res.status(200).json({ name: "John Doe" });
 }
